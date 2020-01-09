@@ -1,0 +1,13 @@
+
+:root {
+    --color-1: #1A3153; 
+    --color-2: #8FACD6; 
+    --color-3: #5F7CB6; 
+    --color-4: #EFEFEE;
+
+    --color-btn-1: #5A9CDD;
+
+    --size-sm: 300px;
+    --size-md: 600px;
+    --size-lg: 1200px;
+}

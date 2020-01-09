@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+/**
+ * This layout targets mainly mobile devices. 
+ * Use other CSS file to define desktop and larger screen size specific rules.
+ */
+
+
+/* Box sizing should adjust to border instead to inner margin */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-4);
+}
+
+/* BRAND */
+.brand {
+    font-size: 1.5em;
+    text-transform: lowercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand img {
+    width: 1em;
+    height: 1em;
+}
+
+#footer .brand img {
+    width: 2em;
+    height: 2em;
+}
+
+/* NAVIGATION */
+
+
+#nav ul, #footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#nav ul li, #footer ul li {
+    display: block;
+    padding: 0.5em 0;
+}
+
+/* DROPDOWN MENU (only small screens) */
+
+.dropdown {
+    display: inline-block;
+}
+
+#nav {
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color:var(--color-3);
+    transition: ease 1s height;
+    height: 0px;
+}
+
+#nav.expanded {
+    height: auto;
+    padding: 0.5em;
+}
+
+#dropdown-menu {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.button-1 {
+    border: none;
+    border-radius: 5px;
+    background: var(--color-btn-1);
+    opacity: 0.8;
+    color: white;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.button-1:hover {
+    opacity: 1;
+}
+
+.dark-section {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+
+
+/* HEADER */
+
+#header {
+    border-bottom: 1px solid var(--color-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+
+/* FOOTER */
+
+#footer {
+    padding: 1em;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 1em 0;
+}
+
+#footer ul li {
+    margin: 1em 0.5em;
+    padding: 0.75em;
+}
+
+.social-icon {
+    color: white;
+    background-color: var(--color-3);
+    border-radius: 5px;
+    
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+section {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/**/
+
+
+h1, .dark-section h2, .dark-section h3, #dropdown-menu {
+    color: #efefff;
+}
+
+section header {
+    display: flex;
+    flex-direction: column;
+}    
+
+/* Section images */
+
+.section-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-img-half img {
+    width: 50%;
+    padding: 0.5em;
+}
+
+
+
+/* SECTION 1 */
+
+#section-1 {
+    padding-bottom: 0;
+}    
+
+#section-1 h2 {
+    font-size: 1.75em;
+}
+
+.download {
+    font-size: 0.9em;
+    color: var(--color-3);
+}    
+
+.download ul {
+    text-align: center;
+    margin-bottom: 3em;
+    padding: 1em 0;
+}    
+
+#section-1 .section-img {
+    align-self: flex-end;
+}
+
+/* SECTION 2 */
+
+#section2 article header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.manage-icon {
+    padding: 1em 0;
+}
+
+/* SECTION 3 */
+
+#section-3 {
+    background-image: url("../img/images-current-account/current-account.jpg");
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position-x: center;
+    color: white;
+    padding: 4em 1em;
+    display: flex;
+}
+
+.section-3-sub {
+    border-radius: 5px;
+    background-color: white;
+    padding: 0;
+    color: #43546E;
+    padding: 2em;
+    margin: 1em 0;
+}
